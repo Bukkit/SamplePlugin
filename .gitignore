@@ -1,0 +1,13 @@
+# Eclipse stuff
+/.classpath
+/.project
+/.settings
+
+# netbeans
+/nbproject
+
+# maven
+/target
+
+# vim
+.*.sw[a-p]
