@@ -1,2 +1,3 @@
 name: Sample Plugin
 main: com.dinnerbone.bukkit.sample.SamplePlugin
+version: 0.2
