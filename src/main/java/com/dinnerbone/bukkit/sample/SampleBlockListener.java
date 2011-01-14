@@ -23,9 +23,9 @@ public class SampleBlockListener extends BlockListener {
     public void onBlockPhysics(BlockPhysicsEvent event) {
         Block block = event.getBlock();
 
-        if ((block.getType() == Material.Sand) || (block.getType() == Material.Gravel)) {
+        if ((block.getType() == Material.SAND) || (block.getType() == Material.GRAVEL)) {
             Block above = block.getFace(BlockFace.Up);
-            if (above.getType() == Material.IronBlock) {
+            if (above.getType() == Material.IRON_BLOCK) {
                 event.setCancelled(true);
             }
         }
@@ -35,7 +35,7 @@ public class SampleBlockListener extends BlockListener {
     public void onBlockCanBuild(BlockCanBuildEvent event) {
         Material mat = event.getMaterial();
 
-        if (mat.equals(Material.Cactus)) {
+        if (mat.equals(Material.CACTUS)) {
             event.setBuildable(true);
         }
     }
