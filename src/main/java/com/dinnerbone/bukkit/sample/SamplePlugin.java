@@ -1,16 +1,17 @@
 
 package com.dinnerbone.bukkit.sample;
 
-import java.io.File;
-import java.util.HashMap;
 import org.bukkit.Player;
 import org.bukkit.Server;
-import org.bukkit.event.Event.Priority;
 import org.bukkit.event.Event;
+import org.bukkit.event.Event.Priority;
 import org.bukkit.plugin.PluginDescriptionFile;
 import org.bukkit.plugin.PluginLoader;
-import org.bukkit.plugin.java.JavaPlugin;
 import org.bukkit.plugin.PluginManager;
+import org.bukkit.plugin.java.JavaPlugin;
+
+import java.io.File;
+import java.util.HashMap;
 
 /**
  * Sample plugin for Bukkit
@@ -22,8 +23,8 @@ public class SamplePlugin extends JavaPlugin {
     private final SampleBlockListener blockListener = new SampleBlockListener(this);
     private final HashMap<Player, Boolean> debugees = new HashMap<Player, Boolean>();
 
-    public SamplePlugin(PluginLoader pluginLoader, Server instance, PluginDescriptionFile desc, File plugin, ClassLoader cLoader) {
-        super(pluginLoader, instance, desc, plugin, cLoader);
+    public SamplePlugin(PluginLoader pluginLoader, Server instance, PluginDescriptionFile desc, File folder, File plugin, ClassLoader cLoader) {
+        super(pluginLoader, instance, desc, folder, plugin, cLoader);
         // TODO: Place any custom initialisation code here
 
         // NOTE: Event registration should be done in onEnable not here as all events are unregistered when a plugin is disabled
