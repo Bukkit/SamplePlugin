@@ -1,8 +1,8 @@
 
 package com.dinnerbone.bukkit.sample;
 
-import org.bukkit.Player;
 import org.bukkit.Server;
+import org.bukkit.entity.Player;
 import org.bukkit.event.Event;
 import org.bukkit.event.Event.Priority;
 import org.bukkit.plugin.PluginDescriptionFile;
