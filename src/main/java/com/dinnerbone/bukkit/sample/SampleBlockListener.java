@@ -1,8 +1,8 @@
 
 package com.dinnerbone.bukkit.sample;
 
-import org.bukkit.Block;
-import org.bukkit.BlockFace;
+import org.bukkit.block.Block;
+import org.bukkit.block.BlockFace;
 import org.bukkit.Material;
 import org.bukkit.event.block.BlockCanBuildEvent;
 import org.bukkit.event.block.BlockListener;
@@ -24,7 +24,7 @@ public class SampleBlockListener extends BlockListener {
         Block block = event.getBlock();
 
         if ((block.getType() == Material.SAND) || (block.getType() == Material.GRAVEL)) {
-            Block above = block.getFace(BlockFace.Up);
+            Block above = block.getFace(BlockFace.UP);
             if (above.getType() == Material.IRON_BLOCK) {
                 event.setCancelled(true);
             }
