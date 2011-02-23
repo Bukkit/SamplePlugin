@@ -22,12 +22,9 @@ public class SamplePlugin extends JavaPlugin {
     private final SampleBlockListener blockListener = new SampleBlockListener(this);
     private final HashMap<Player, Boolean> debugees = new HashMap<Player, Boolean>();
 
-    public SamplePlugin(PluginLoader pluginLoader, Server instance, PluginDescriptionFile desc, File folder, File plugin, ClassLoader cLoader) {
-        super(pluginLoader, instance, desc, folder, plugin, cLoader);
-        // TODO: Place any custom initialisation code here
-
-        // NOTE: Event registration should be done in onEnable not here as all events are unregistered when a plugin is disabled
-    }
+    // NOTE: There should be no need to define a constructor any more for more info on moving from
+    // the old constructor see:
+    // http://forums.bukkit.org/threads/too-long-constructor.5032/
 
     public void onDisable() {
         // TODO: Place any custom disable code here
