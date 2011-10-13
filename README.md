@@ -7,3 +7,8 @@ This will compile and packge your plugin, then download all the necessary depend
 
 
 Note: the code will only compile with JDK 1.6 (cause: @Override for interface methods)
+
+
+For Eclipse Users:
+-to run the server from eclipse, create a Maven Run Configuration, set Goal to "package" and Profile to "start-server"
+-to submit your own changes to your own github repository, you need to add your ssh key to your $HOME/.ssh folder (github help has further information)
