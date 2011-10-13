@@ -15,3 +15,6 @@
 
 # vim
 .*.sw[a-p]
+server/world
+server/world_nether
+server/server.log
