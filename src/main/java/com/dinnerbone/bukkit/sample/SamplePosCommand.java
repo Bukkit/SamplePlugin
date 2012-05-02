@@ -36,7 +36,7 @@ public class SamplePosCommand implements CommandExecutor {
                 double y = Double.parseDouble(split[1]);
                 double z = Double.parseDouble(split[2]);
 
-                player.teleportTo(new Location(player.getWorld(), x, y, z));
+                player.teleport(new Location(player.getWorld(), x, y, z));
             } catch (NumberFormatException ex) {
                 player.sendMessage("Given location is invalid");
             }
