@@ -12,12 +12,6 @@ import org.bukkit.command.CommandSender;
  * @author SpaceManiac
  */
 public class SamplePosCommand implements CommandExecutor {
-    private final SamplePlugin plugin;
-
-    public SamplePosCommand(SamplePlugin plugin) {
-        this.plugin = plugin;
-    }
-
     @Override
     public boolean onCommand(CommandSender sender, Command command, String label, String[] split) {
         if (!(sender instanceof Player)) {
@@ -36,7 +30,7 @@ public class SamplePosCommand implements CommandExecutor {
                 double y = Double.parseDouble(split[1]);
                 double z = Double.parseDouble(split[2]);
 
-                player.teleportTo(new Location(player.getWorld(), x, y, z));
+                player.teleport(new Location(player.getWorld(), x, y, z));
             } catch (NumberFormatException ex) {
                 player.sendMessage("Given location is invalid");
             }
