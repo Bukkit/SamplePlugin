@@ -12,7 +12,6 @@ import org.bukkit.entity.Player;
  * @author SpaceManiac
  */
 public class SamplePosCommand implements CommandExecutor {
-    @Override
     public boolean onCommand(CommandSender sender, Command command, String label, String[] split) {
         if (!(sender instanceof Player)) {
             return false;

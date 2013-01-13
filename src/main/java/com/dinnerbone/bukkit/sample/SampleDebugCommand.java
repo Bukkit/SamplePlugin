@@ -16,7 +16,6 @@ public class SampleDebugCommand implements CommandExecutor {
         this.plugin = plugin;
     }
 
-    @Override
     public boolean onCommand(CommandSender sender, Command command, String label, String[] split) {
         if (sender instanceof Player) {
             Player player = (Player) sender;
