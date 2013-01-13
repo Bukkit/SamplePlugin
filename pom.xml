@@ -2,10 +2,10 @@
   <modelVersion>4.0.0</modelVersion>
   <groupId>org.bukkit</groupId>
   <artifactId>bukkit-sample-plugin</artifactId>
-  <version>0.0.1-SNAPSHOT</version>
+  <version>0.5</version>
   <name>BukkitSamplePlugin</name>
   <url>http://www.bukkit.org</url>
-  
+
   <repositories>
     <repository>
       <id>bukkit-repo</id>
@@ -22,8 +22,14 @@
       <scope>compile</scope>
     </dependency>
   </dependencies>
-  
+
   <build>
+    <resources>
+      <resource>
+        <directory>src/main/resources</directory>
+        <filtering>true</filtering>
+      </resource>
+    </resources>
     <plugins>
       <plugin>
         <groupId>org.apache.maven.plugins</groupId>

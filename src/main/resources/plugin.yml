@@ -1,6 +1,6 @@
 name: Sample Plugin
 main: com.dinnerbone.bukkit.sample.SamplePlugin
-version: 0.5
+version: ${version}
 commands:
   pos:
     description: Displays your position or teleports you to another.
