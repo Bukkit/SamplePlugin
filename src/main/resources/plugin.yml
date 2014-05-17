@@ -1,4 +1,4 @@
-name: Sample Plugin
+name: SamplePlugin
 main: com.dinnerbone.bukkit.sample.SamplePlugin
 version: ${version}
 commands:
