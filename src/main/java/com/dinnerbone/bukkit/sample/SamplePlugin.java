@@ -48,9 +48,9 @@ public class SamplePlugin extends JavaPlugin {
     public boolean isDebugging(final Player player) {
         if (debugees.containsKey(player)) {
             return debugees.get(player);
-        } else {
-            return false;
         }
+
+        return false;
     }
 
     public void setDebugging(final Player player, final boolean value) {
