@@ -22,8 +22,8 @@ public class SampleDebugCommand implements CommandExecutor {
             plugin.setDebugging(player, !plugin.isDebugging(player));
 
             return true;
-        } else {
-            return false;
         }
+
+        return false;
     }
 }
